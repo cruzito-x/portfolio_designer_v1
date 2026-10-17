@@ -1,0 +1,18 @@
+.skills-section img {
+  width: 45px;
+}
+
+.carousel-indicators button {
+  background-color: var(--enphasis-color) !important;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+}
+
+.skill-level-note {
+  margin: 0 auto;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  text-align: center;
+}

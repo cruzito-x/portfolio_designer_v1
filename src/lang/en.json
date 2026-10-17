@@ -1,0 +1,424 @@
+{
+  "en": {
+    "home": {
+      "text": "Home"
+    },
+    "about": {
+      "text": "About"
+    },
+    "experience": {
+      "text": "Experience"
+    },
+    "skills": {
+      "text": "Skills"
+    },
+    "portfolio": {
+      "text": "Portfolio"
+    },
+    "contact": {
+      "text": "Contact"
+    },
+    "hero_kicker": {
+      "text": "Web design · Figma · Frontend"
+    },
+    "build_card_aria": {
+      "text": "David Cruz, web designer and frontend developer"
+    },
+    "build_card_notes": {
+      "text": "STUDIO / WEB"
+    },
+    "build_card_date": {
+      "text": "2026"
+    },
+    "build_card_title_start": {
+      "text": "Clear ideas,"
+    },
+    "build_card_title_end": {
+      "text": "digital experiences."
+    },
+    "build_card_copy": {
+      "text": "I design attractive, easy-to-use websites that work across devices."
+    },
+    "build_card_flow": {
+      "text": "Web design process"
+    },
+    "build_card_idea": {
+      "text": "IDEA"
+    },
+    "build_card_design": {
+      "text": "DESIGN"
+    },
+    "build_card_development": {
+      "text": "WEB"
+    },
+    "build_card_ship": {
+      "text": "READY"
+    },
+    "build_card_stack": {
+      "text": "FIGMA / HTML / CSS / REACT"
+    },
+    "profile_kicker": {
+      "text": "01 / profile"
+    },
+    "experience_kicker": {
+      "text": "02 / track record"
+    },
+    "skills_kicker": {
+      "text": "03 / toolkit"
+    },
+    "portfolio_kicker": {
+      "text": "04 / selected work"
+    },
+    "contact_kicker": {
+      "text": "05 / open channel"
+    },
+    "greeting": {
+      "text": "Hi! I'm"
+    },
+    "title": {
+      "text": "Web Designer | Figma and Frontend Development"
+    },
+    "description": {
+      "text": "I design web interfaces and prototypes primarily in Figma. My experience building with HTML, CSS, JavaScript, and React helps me carry designs through to responsive websites.\nI also have basic Photoshop skills and a degree in Systems and Computer Engineering.\n\nI’m interested in collaborating with development and marketing teams, and improving pages through testing and user feedback."
+    },
+    "download": {
+      "text": "Download CV"
+    },
+    "contact_me": {
+      "text": "Contact Me"
+    },
+    "about_me": {
+      "text": "About Me"
+    },
+    "about_subtitle": {
+      "text": "Interface design backed by web development skills"
+    },
+    "about_description": {
+      "text": "I’m David Cruz, a Systems and Computer Engineer with experience in web development. Figma is my primary design tool for exploring ideas and creating interface prototypes."
+    },
+    "about_description_title": {
+      "text": "Systems and Computer Engineering"
+    },
+    "about_experience_backfill": {
+      "text": ", I have experience as "
+    },
+    "about_secondary_title": {
+      "text": "Web Designer "
+    },
+    "about_web_designer_title": {
+      "text": "using design tools such as Figma and as "
+    },
+    "about_experience_description_backfill": {
+      "text": " I have experience in web application development using JavaScript-based technologies such as React.js, Node.js and Express.js and with Php-based technologies such as Laravel, I also handle various database engines such as MySQL, SQL Server and PostgreSQL for "
+    },
+    "development": {
+      "text": "development"
+    },
+    "and": {
+      "text": " and "
+    },
+    "management": {
+      "text": "management"
+    },
+    "of": {
+      "text": " of "
+    },
+    "relational_databases": {
+      "text": "relational databases"
+    },
+    "currently_pre_specialty": {
+      "text": "In addition, I hold the title of "
+    },
+    "ai_especiality": {
+      "text": "Artificial Intelligence Engineering Specialist"
+    },
+    "at_the": {
+      "text": " thanks to my Specialty year at the "
+    },
+    "university": {
+      "text": "Technological University of El Salvador"
+    },
+    "cosplayer_text": {
+      "text": "Beyond my professional life, I am also an "
+    },
+    "cosplayer_title": {
+      "text": "cosplayer"
+    },
+    "cosplay_description": {
+      "text": ", a creative passion that allows me to bring my favorite characters to life through art and design. This hobby enhances my creativity and problem-solving skills, which something that also contributes to my work as an engineer."
+    },
+    "experience_title": {
+      "text": "Experience & Education"
+    },
+    "experience_subtitle": {
+      "text": "Companies I have Worked with & My education"
+    },
+    "laboral_title": {
+      "text": "Laboral"
+    },
+    "education_title": {
+      "text": "Education"
+    },
+    "pre_specialty_time": {
+      "text": "March 2025 - December 2025"
+    },
+    "pre_specialty_title": {
+      "text": "Specialty in Artificial Intelligence Engineering."
+    },
+    "utec_time": {
+      "text": "July 2026 - September 2026"
+    },
+    "utec_job": {
+      "text": "Professor Class Hour."
+    },
+    "sms": {
+      "text": "Software Mobile Solutions S.A de C.V"
+    },
+    "sms_time": {
+      "text": "May 2025 - Actuality"
+    },
+    "sms_job": {
+      "text": "Web Programmer Analyst."
+    },
+    "tec_101": {
+      "text": "Technology 101 S.A de C.V"
+    },
+    "tec101_time": {
+      "text": "October 2024 - November 2024"
+    },
+    "tec101_job": {
+      "text": "Junior Software Developer."
+    },
+    "codeEye_time": {
+      "text": "April 2023 - June 2024"
+    },
+    "codeeye": {
+      "text": "CodeEye Solutions Inc"
+    },
+    "codeEye_job": {
+      "text": "Junior Software Developer."
+    },
+    "mutual_fund_time": {
+      "text": "February 2019 - August 2019"
+    },
+    "mutual_fund_job": {
+      "text": "Technical Support Assistant."
+    },
+    "mutual_fund": {
+      "text": "Mutual Fund for MINED Employees."
+    },
+    "skills_subtitle": {
+      "text": "Figma as my primary tool, with basic Photoshop knowledge"
+    },
+    "frontend_skills": {
+      "text": "Frontend Skills"
+    },
+    "backend_skills": {
+      "text": "Backend Skills"
+    },
+    "ai_skills": {
+      "text": "Artificial Intelligence Skills"
+    },
+    "frontend": {
+      "text": "Frontend"
+    },
+    "backend": {
+      "text": "Backend"
+    },
+    "complementary_tools": {
+      "text": "Workflow tools"
+    },
+    "skills_text": {
+      "text": "Figma is my primary tool for designing and prototyping interfaces. I have basic Photoshop knowledge and a technical foundation in HTML, CSS, JavaScript, and React to support responsive implementation."
+    },
+    "skills_text_backfill": {
+      "text": " that allow me to develop complete, efficient and scalable web applications. These skills enable me to build functional and high performance solutions, focused on compliance with good programming practices, optimal maintenance of projects and delivery of an excellent user experience at every stage of development."
+    },
+    "projects_subtitle": {
+      "text": "Figma interface prototypes and web projects I have developed"
+    },
+    "all": {
+      "text": "All"
+    },
+    "deploy": {
+      "text": "Deploy"
+    },
+    "source_code": {
+      "text": "Source Code"
+    },
+    "extension_source": {
+      "text": "Extension Source"
+    },
+    "design": {
+      "text": "Design"
+    },
+    "ai": {
+      "text": "AI"
+    },
+    "movies_finder_title": {
+      "text": "Movies & Series Finder"
+    },
+    "movies_finder_description": {
+      "text": "Web platform with OMDb API integration for detailed information on movies and series."
+    },
+    "weather_visualizer_title": {
+      "text": "Weather Visualizer"
+    },
+    "weather_visualizer_description": {
+      "text": "Web app that uses OpenWeather API to obtain weather data from a specific location."
+    },
+    "color_scales_generator_title": {
+      "text": "Color Scales Generator"
+    },
+    "color_scales_generator_description": {
+      "text": "Web tool to create color scales from a hex code or name, ideal for designers and developers."
+    },
+    "translator_title": {
+      "text": "Translator"
+    },
+    "translator_description": {
+      "text": "Web app that makes use of MyMemory API for instant translations in several languages."
+    },
+    "spidey_portfolio_title": {
+      "text": "Spider-Man 503 Portfolio"
+    },
+    "spidey_portfolio_description": {
+      "text": "Web portfolio of a Salvadoran content creator and cosplayer. It showcases his work, skills, and experience as an artist."
+    },
+    "iris_extension_title": {
+      "text": "VS Marketplace Extension"
+    },
+    "iris_extension_description": {
+      "text": "Extension for Azure DevOps to perform source code analysis and vulnerability detection in it."
+    },
+    "bookstore_sales_system_title": {
+      "text": "Bookstore Sales System"
+    },
+    "bookstore_sales_system_description": {
+      "text": "Web CRM for sales and inventory management, invoicing and reporting generation of a bookstore."
+    },
+    "e_commerce_title": {
+      "text": "E-commerce App"
+    },
+    "e_commerce_description": {
+      "text": "E-commerce web platform for sales and inventory management for a technology products store."
+    },
+    "bank_collection_system_title": {
+      "text": "Bank Collection System"
+    },
+    "bank_collection_system_description": {
+      "text": "Web system based on role-based authentication for payment of services and banking transactions."
+    },
+    "utec_dashboard_ai_title": {
+      "text": "Smart Parking System"
+    },
+    "utec_dashboard_ai_description": {
+      "text": "Website for viewing the smart parking system, with real-time display of space occupancy."
+    },
+    "bookstore_sales_system_api_title": {
+      "text": "Bookstore Sales System API"
+    },
+    "bookstore_sales_system_api_description": {
+      "text": "Set of endpoints with a system for storing images in the server and returning this to the front-end."
+    },
+    "bank_collection_system_api_title": {
+      "text": "Bank Collection System API"
+    },
+    "bank_collection_system_api_description": {
+      "text": "Endpoints for the management of banking transactions, prioritizing security and data integrity."
+    },
+    "parking_system_api_title": {
+      "text": "Smart Parking System API"
+    },
+    "parking_system_api_description": {
+      "text": "Endpoints for the management of a smart parking system, prioritizing security and data integrity."
+    },
+    "utec_ai_title": {
+      "text": "Intelligent Parking System Using Computer Vision"
+    },
+    "utec_ai_description": {
+      "text": "System that uses AI techniques to detect available spaces in real time. Presented as a graduation project at UTEC El Salvador."
+    },
+    "vs_marketplace_extension_title": {
+      "text": "VS Marketplace Extension"
+    },
+    "vs_marketplace_extension_description": {
+      "text": "Clean and professional design, oriented to a pleasant UX with a user-friendly UI, ideal for data visualization."
+    },
+    "vulnerabilities_dashboard_title": {
+      "text": "Vulnerability Dashboard"
+    },
+    "vulnerabilities_dashboard_description": {
+      "text": "Clean, clear and professional design, ideal for the purpose of workspaces and vulnerability management."
+    },
+    "neurodivergent_people_mobile_app_title": {
+      "text": "Neurofriendly App"
+    },
+    "neurodivergent_people_mobile_app_description": {
+      "text": "Inclusive, intuitive and accessible design for the target audience, prioritizing UX for user comfort."
+    },
+    "personal_finances_mobile_app_title": {
+      "text": "Personal Finances App"
+    },
+    "personal_finances_mobile_app_description": {
+      "text": "Mobile app for managing personal finances, with an intuitive and accessible design for the user."
+    },
+    "contact_subtitle": {
+      "text": "Say Hello ^^"
+    },
+    "contact_text": {
+      "text": "If you have any questions, need help, or just want to say hi, feel free to send me a message. I will get back to you as soon as possible ^^"
+    },
+    "send_me_a_message": {
+      "text": "Send Me a Message"
+    },
+    "name": {
+      "text": "Name"
+    },
+    "name_placeholder": {
+      "text": "Your name"
+    },
+    "email": {
+      "text": "E-mail"
+    },
+    "email_placeholder": {
+      "text": "youremailaddress@mail.com"
+    },
+    "message": {
+      "text": "Message"
+    },
+    "message_placeholder": {
+      "text": "Write your message"
+    },
+    "send_message": {
+      "text": "Send Message"
+    },
+    "fill_all_fields": {
+      "text": "Please, Fill the form to send a message"
+    },
+    "success_text": {
+      "text": "Message sent!"
+    },
+    "success_accept": {
+      "text": "Accept"
+    },
+    "about_secondary_description": {
+      "text": "I have basic Photoshop skills. My experience with HTML, CSS, JavaScript, and React helps me understand responsive layouts and collaborate closely with development teams as designs become functional websites."
+    },
+    "design_skills": {
+      "text": "Interface design"
+    },
+    "web_skills": {
+      "text": "Web development"
+    },
+    "web_design": {
+      "text": "Web Design"
+    },
+    "ui_ux_design": {
+      "text": "UI/UX Design"
+    },
+    "photoshop_basic": {
+      "text": "Photoshop · basic knowledge"
+    }
+  }
+}

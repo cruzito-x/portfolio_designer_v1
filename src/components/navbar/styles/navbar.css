@@ -1,0 +1,29 @@
+.site-navbar { position: fixed; inset: 0 0 auto; z-index: 20; padding: 17px 24px; background: color-mix(in srgb, var(--bg) 86%, transparent); backdrop-filter: blur(18px); transition: border-color 180ms, box-shadow 180ms; }
+.site-navbar { padding-block: 20px; }
+.site-navbar.is-scrolled { border-bottom: 1px solid var(--line); box-shadow: 0 10px 30px rgba(17, 24, 32, .04); }
+.site-navbar-inner { display: flex; justify-content: space-between; align-items: center; width: min(1180px, 100%); margin: 0 auto; }
+.site-navbar-links { display: flex; align-items: center; gap: clamp(14px, 2.4vw, 34px); }
+.nav_link { color: var(--ink-soft); font: 700 .75rem/1.2 "DM Mono", monospace; letter-spacing: .03em; text-decoration: none; text-transform: uppercase; transition: color 160ms; }
+.active_link, .nav_link:hover { color: var(--accent) !important; }
+.site-navbar .theme-button { display: flex; align-items: center; gap: 10px; color: var(--ink); }
+.site-navbar .theme-button img { width: 39px !important; height: 39px; border: 1px solid var(--line); box-shadow: none !important; }
+.site-navbar .theme-label { color: var(--ink-soft); font: 700 .7rem/1.2 "DM Mono", monospace; letter-spacing: .05em; }
+.site-navbar-links { gap: clamp(16px, 2.3vw, 31px); }
+.nav_link { font-size: .68rem; letter-spacing: .08em; }
+.site-navbar.is-scrolled { background: color-mix(in srgb, var(--bg) 94%, transparent); }
+@media (max-width: 900px) { .site-navbar-links { gap: 15px; } .site-navbar { padding-inline: 18px; } }
+
+.mobile-navbar { position: relative; z-index: 30; }
+.mobile-menu-toggle { position: fixed; right: 16px; bottom: 16px; z-index: 32; display: grid; width: 52px; height: 52px; place-items: center; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); color: var(--ink); box-shadow: 0 14px 30px rgba(17, 24, 32, .14); font-size: 1.35rem; transition: transform 160ms, background 160ms, color 160ms; }
+.mobile-menu-toggle:hover { background: var(--accent); color: #fff; transform: translateY(-2px); }
+.mobile-menu-toggle.is-open { visibility: hidden; opacity: 0; pointer-events: none; }
+.mobile-menu { position: fixed; right: 16px; bottom: 16px; left: 16px; z-index: 31; max-height: calc(100vh - 112px); overflow-y: auto; padding: 18px; border: 1px solid var(--line); border-radius: 24px; background: color-mix(in srgb, var(--surface) 96%, transparent); box-shadow: 0 24px 70px rgba(17, 24, 32, .18); backdrop-filter: blur(18px); animation: mobile-menu-in 180ms ease-out both; }
+.mobile-menu-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; padding: 0 2px 14px; border-bottom: 1px solid var(--line); color: var(--ink-soft); font: 700 .68rem/1.2 "DM Mono", monospace; letter-spacing: .12em; text-transform: uppercase; }
+.mobile-menu-header button { display: grid; width: 32px; height: 32px; place-items: center; border: 1px solid var(--line); border-radius: 9px; background: transparent; color: var(--ink); font-size: 1.1rem; transition: border-color 160ms, background 160ms, color 160ms; }
+.mobile-menu-header button:hover { border-color: var(--accent); background: var(--accent); color: #fff; }
+.mobile-menu-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.mobile-menu-grid a { display: flex; flex-direction: column; align-items: center; gap: 8px; min-width: 0; padding: 12px 6px; border: 1px solid transparent; border-radius: 14px; color: var(--ink-soft); font: 700 .7rem/1.2 "DM Mono", monospace; text-align: center; text-decoration: none; text-transform: uppercase; transition: color 160ms, border-color 160ms, background 160ms; }
+.mobile-menu-grid a:hover, .mobile-menu-grid a.active_link { border-color: var(--accent-wash); background: var(--accent-wash); color: var(--accent) !important; }
+.mobile-menu-icon { display: grid; width: 36px; height: 36px; place-items: center; border: 1px solid var(--line); border-radius: 11px; font-size: 1.05rem; }
+@keyframes mobile-menu-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+
