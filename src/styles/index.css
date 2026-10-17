@@ -145,9 +145,9 @@ h2 em { font-size: 1.12em; letter-spacing: -.025em; }
 .work-media--5 { background: #e4e7ef; }
 .work-media--6 { background: #eee7dd; }
 .work-media--7 { background: #e8e6de; }
-.work-media--8 { background: #ede1d6; }
+.work-media--8 { background: #f2e6c8; }
 .work-media--9 { background: #e0e9e3; }
-.work-media--10 { background: #e6e2f1; }
+.work-media--10 { background: #e1eaf5; }
 .work-media .browser-frame { display: flex; flex-direction: column; width: 100%; height: 100%; transition: box-shadow 300ms ease; }
 .work-media .browser-bar { flex: 0 0 24px; }
 .work-media .browser-screen { flex: 1; min-height: 0; aspect-ratio: auto; }

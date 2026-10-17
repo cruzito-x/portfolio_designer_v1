@@ -187,7 +187,7 @@ function DesignerPortfolio({ lang, language, onChangeLanguage }) {
                 </a>
                 <div className="work-info"><div><span className="project-kind">{project.category}{project.isConcept && <span className="project-concept">{copy.concept}</span>}</span><h3><a href={url} target="_blank" rel="noopener noreferrer">{project.title}</a></h3></div><Arrow diagonal /></div>
                 <p className="work-description">{project.description}</p>
-                <div className="work-foot"><span>{project.techs.map((tech) => tech.name).join(" / ")}</span><a href={url} target="_blank" rel="noopener noreferrer">{linkLabel}<Arrow diagonal /></a></div>
+                <div className="work-foot"><span>{project.styleLabel || project.techs.map((tech) => tech.name).join(" / ")}</span><a href={url} target="_blank" rel="noopener noreferrer">{linkLabel}<Arrow diagonal /></a></div>
               </article>;
             })}
           </div>
