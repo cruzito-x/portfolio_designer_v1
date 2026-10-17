@@ -6,6 +6,7 @@ import ecommerce from "@/assets/pictures/Frontend/work7.webp";
 import spideyPortfolio from "@/assets/pictures/Frontend/work10.webp";
 import { techStack } from "@/assets/data/TechStack";
 import { getConceptProjects } from "@/assets/data/conceptProjects";
+import { getPhotoshopProjects } from "@/assets/data/photoshopProjects";
 
 export const getFilters = (lang) => [
   { name: lang.all?.text },
@@ -90,5 +91,6 @@ export const getProjectsData = (lang, language = lang.all?.text === "Todos" ? "e
         "https://www.figma.com/design/Bh6zAJMZwH1hPVSKdd7zIV/IRIS-Code-Scanner?node-id=0-1&t=WFgD6oEX4MtUZavF-1",
     },
     ...getConceptProjects({ language, category: webDesign.name, techs: getTechs("figma") }),
+    ...getPhotoshopProjects({ language, category: webDesign.name }),
   ];
 };

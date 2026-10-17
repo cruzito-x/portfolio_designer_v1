@@ -1,0 +1,4 @@
+Group: 04 / Contact and footer
+General Photoshop error occurred. This functionality may not be available in this version of Photoshop.
+- The command "<unknown>" is not currently available.
+Line: 62

@@ -4,6 +4,7 @@ import { getExperienceData } from "@/assets/data/experienceData";
 import { useTheme } from "@/context/ThemeContext";
 import portrait from "@/assets/img/me.webp";
 import curriculum from "@/assets/docs/David Cruz - Curriculum Vitae.pdf";
+import ProjectPreview from "./ProjectPreview";
 
 const text = {
   es: {
@@ -16,7 +17,7 @@ const text = {
     disciplines: ["Diseño web", "Interfaces UI/UX", "Desarrollo frontend"],
     workLabel: "01 / Trabajo seleccionado", workTitle: "El diseño habla.", workItalic: "Estos son mis proyectos.",
     workDescription: "Sitios web e interfaces donde cada decisión tiene un propósito.",
-    filters: ["Todos", "Sitios web", "UI/UX"], web: "Ver sitio web", figma: "Explorar en Figma", source: "Ver código", concept: "Concepto ficticio",
+    filters: ["Todos", "Sitios web", "UI/UX"], web: "Ver sitio web", figma: "Explorar en Figma", source: "Ver código", concept: "Concepto ficticio", preview: "Recorrer diseño completo", psd: "Descargar PSD",
     aboutLabel: "02 / Detrás del diseño", aboutTitle: "Sensibilidad visual.", aboutItalic: "Criterio técnico.",
     aboutDescription: "Soy David, diseñador web e Ingeniero en Sistemas y Computación. Me interesa ese punto en el que una buena idea se convierte en una experiencia clara, útil y con personalidad.",
     aboutMore: "Trabajo en Figma para dar forma a las interfaces y en HTML, CSS, JavaScript y React para llevarlas a la web. Entender ambos lados me permite diseñar con los pies en la tierra y cuidar lo que pasa después del prototipo.",
@@ -47,7 +48,7 @@ const text = {
     disciplines: ["Web design", "UI/UX interfaces", "Frontend development"],
     workLabel: "01 / Selected work", workTitle: "Design speaks.", workItalic: "Here's my work.",
     workDescription: "Websites and interfaces where every decision has a purpose.",
-    filters: ["All", "Websites", "UI/UX"], web: "Visit website", figma: "Explore in Figma", source: "View code", concept: "Fictional concept",
+    filters: ["All", "Websites", "UI/UX"], web: "Visit website", figma: "Explore in Figma", source: "View code", concept: "Fictional concept", preview: "Explore complete design", psd: "Download PSD",
     aboutLabel: "02 / Behind the design", aboutTitle: "Visual sensibility.", aboutItalic: "Technical thinking.",
     aboutDescription: "I'm David, a web designer and Systems and Computing Engineer. I'm drawn to that moment when a good idea becomes a clear, useful experience with its own personality.",
     aboutMore: "I use Figma to shape interfaces and HTML, CSS, JavaScript and React to bring them to the web. Understanding both sides helps me design thoughtfully and care for what happens beyond the prototype.",
@@ -92,7 +93,7 @@ const BrowserFrame = ({ project, hero = false }) => (
   <div className={`browser-frame ${hero ? "browser-frame--hero" : ""}`}>
     <div className="browser-bar" aria-hidden="true">
       <span className="browser-dots"><i /><i /><i /></span>
-      <span>{project.id === 1 ? "spidermansv.vercel.app" : project.design_url ? "FIGMA / INTERFACE DESIGN" : "WEB / FRONTEND DEVELOPMENT"}</span>
+      <span>{project.id === 1 ? "spidermansv.vercel.app" : project.designTool === "Photoshop 2025" ? "PHOTOSHOP 2025 / WEB DESIGN" : project.design_url ? "FIGMA / INTERFACE DESIGN" : "WEB / FRONTEND DEVELOPMENT"}</span>
       <span className="browser-plus">+</span>
     </div>
     <div className="browser-screen">
@@ -106,6 +107,7 @@ function DesignerPortfolio({ lang, language, onChangeLanguage }) {
   const { isDarkMode, toggleTheme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
   const [filter, setFilter] = useState("all");
+  const [previewProject, setPreviewProject] = useState(null);
   const projects = getProjectsData(lang, language);
   const experience = getExperienceData(lang);
   const visibleProjects = projects.filter((project) => matchesProjectFilter(project, filter));
@@ -177,17 +179,19 @@ function DesignerPortfolio({ lang, language, onChangeLanguage }) {
           </div>
           <div className="work-grid" aria-live="polite" aria-atomic="true">
             {visibleProjects.map((project) => {
-              const url = project.deploy_url || project.design_url || project.source_url;
-              const linkLabel = project.deploy_url ? copy.web : project.design_url ? copy.figma : copy.source;
+              const url = project.deploy_url || project.design_url || project.download_url || project.source_url;
+              const linkLabel = project.deploy_url ? copy.web : project.design_url ? copy.figma : project.download_url ? copy.psd : copy.source;
+              const openPreview = project.previewOnly ? (event) => { event.preventDefault(); setPreviewProject(project); } : undefined;
               return <article id={`project-${project.id}`} className={`work-item work-item--${project.id}`} key={project.id}>
-                <a href={url} className={`work-media work-media--${project.id}`} target="_blank" rel="noopener noreferrer" aria-label={`${linkLabel}: ${project.title}`}>
+                <a href={url} onClick={openPreview} className={`work-media work-media--${project.id}`} target="_blank" rel="noopener noreferrer" aria-label={`${project.previewOnly ? copy.preview : linkLabel}: ${project.title}`}>
                   <span className="work-number">/{String(project.id).padStart(2, "0")}</span>
                   <BrowserFrame project={project} />
                   <span className="project-open"><Arrow diagonal /></span>
                 </a>
-                <div className="work-info"><div><span className="project-kind">{project.category}{project.isConcept && <span className="project-concept">{copy.concept}</span>}</span><h3><a href={url} target="_blank" rel="noopener noreferrer">{project.title}</a></h3></div><Arrow diagonal /></div>
+                <div className="work-info"><div><span className="project-kind">{project.category}{project.isConcept && <span className="project-concept">{copy.concept}</span>}</span><h3><a href={url} onClick={openPreview} target="_blank" rel="noopener noreferrer">{project.title}</a></h3></div><Arrow diagonal /></div>
                 <p className="work-description">{project.description}</p>
-                <div className="work-foot"><span>{project.styleLabel || project.techs.map((tech) => tech.name).join(" / ")}</span><a href={url} target="_blank" rel="noopener noreferrer">{linkLabel}<Arrow diagonal /></a></div>
+                {project.previewViews && <button className="project-preview-trigger" onClick={() => setPreviewProject(project)} aria-label={`${copy.preview}: ${project.title}`}>{copy.preview}<span aria-hidden="true">↓</span></button>}
+                <div className="work-foot"><span>{project.styleLabel || project.techs.map((tech) => tech.name).join(" / ")}</span><a href={url} download={project.download_url ? true : undefined} target={project.download_url ? undefined : "_blank"} rel={project.download_url ? undefined : "noopener noreferrer"}>{linkLabel}<Arrow diagonal /></a></div>
               </article>;
             })}
           </div>
@@ -226,6 +230,7 @@ function DesignerPortfolio({ lang, language, onChangeLanguage }) {
       </main>
 
       <footer className="portfolio-footer"><div className="page-width"><div className="footer-top"><span>{copy.footerNote}</span><a href="#home">{copy.top}<span>↑</span></a></div><div className="footer-bottom"><span>© {new Date().getFullYear()} {copy.rights}</span><div><a href="https://www.linkedin.com/in/cruzsv" target="_blank" rel="noopener noreferrer">LinkedIn<Arrow diagonal /></a><a href="https://github.com/cruzito-x" target="_blank" rel="noopener noreferrer">GitHub<Arrow diagonal /></a><a href="https://instagram.com/cruzito.x_" target="_blank" rel="noopener noreferrer">Instagram<Arrow diagonal /></a></div></div></div></footer>
+      {previewProject && <ProjectPreview project={previewProject} language={language} onClose={() => setPreviewProject(null)} />}
     </div>
   );
 }
