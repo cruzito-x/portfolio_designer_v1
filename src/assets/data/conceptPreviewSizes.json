@@ -1,0 +1,42 @@
+{
+  "atlas": {
+    "desktop": {
+      "width": 1440,
+      "height": 3852
+    },
+    "mobile": {
+      "width": 359,
+      "height": 4096
+    }
+  },
+  "bruma": {
+    "desktop": {
+      "width": 1237,
+      "height": 4096
+    },
+    "mobile": {
+      "width": 278,
+      "height": 4096
+    }
+  },
+  "senda": {
+    "desktop": {
+      "width": 1153,
+      "height": 4096
+    },
+    "mobile": {
+      "width": 318,
+      "height": 4096
+    }
+  },
+  "orbit": {
+    "desktop": {
+      "width": 1339,
+      "height": 4096
+    },
+    "mobile": {
+      "width": 294,
+      "height": 4096
+    }
+  }
+}
