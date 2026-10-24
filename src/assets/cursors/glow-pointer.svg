@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="112" viewBox="0 0 112 112">
+  <defs>
+    <radialGradient id="wine">
+      <stop stop-color="#76263f" stop-opacity=".32"/>
+      <stop offset=".35" stop-color="#76263f" stop-opacity=".14"/>
+      <stop offset=".7" stop-color="#76263f" stop-opacity=".04"/>
+      <stop offset="1" stop-color="#76263f" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sky">
+      <stop stop-color="#afdcef" stop-opacity=".3"/>
+      <stop offset=".5" stop-color="#afdcef" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#afdcef" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="56" cy="56" r="54" fill="url(#wine)"/>
+  <circle cx="56" cy="56" r="36" fill="url(#sky)"/>
+  <path d="M54 69V58a2 2 0 0 1 4 0v6a2 2 0 0 1 4 0v1a2 2 0 0 1 4 0v2a2 2 0 0 1 4 0v7c0 5-2 8-7 8h-2c-3 0-5-2-7-5l-4-6a2 2 0 0 1 3-3l2 2Z" fill="#fff" stroke="#182b49" stroke-width="1.25" stroke-linejoin="round"/>
+</svg>

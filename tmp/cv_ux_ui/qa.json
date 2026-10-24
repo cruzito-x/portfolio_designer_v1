@@ -1,0 +1,18 @@
+{
+  "pages": 2,
+  "page_size_points": [
+    0,
+    0,
+    612,
+    792
+  ],
+  "word_editable": true,
+  "links": 5,
+  "visual_review": "Both final page PNGs inspected after native Word PDF export",
+  "source_roles_and_dates_preserved": true,
+  "borders": 0,
+  "outputs": {
+    "output\\docx\\David_Cruz_CV_Diseno_UX_UI.docx": 40145,
+    "output\\pdf\\David_Cruz_CV_Diseno_UX_UI.pdf": 240310
+  }
+}
